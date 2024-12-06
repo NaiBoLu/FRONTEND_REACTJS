@@ -1,0 +1,625 @@
+/*file css chính*/
+.header{
+    width: 100%;
+    height: 132px;
+    position: relative;
+}
+.header1{
+
+    height: 42px;
+    flex-shrink: 0;
+    background: #F5F5F5;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+.header1__nav{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.header1__nav__box{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 7px;
+}
+.txt-header1{
+    color: var(--Text, #666);
+    text-align: right;
+    font-family: "HK Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+}
+
+
+
+/**header 2 - chỗ logo megamarket*/
+.header2 {
+    height: 90px;
+    flex-shrink: 0;
+    background: var(--White, #FFF);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px #D9D9D9;
+    box-shadow: 0px 7px 6px rgba(73, 69, 69, 0.5); /* Đổ bóng */
+}
+
+.header2__logo {
+    display: flex;
+    margin: 0;
+    padding: 10;
+
+}
+
+.logo_icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.header2__search{
+    width: 507px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--Background-3, #F3F9FB);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.header2__search>img{
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    fill: rgba(0, 0, 0, 0.00);
+}
+
+.header2__search-input{
+   flex-grow: 1; /*chiếm hết phần không gian của div chứa no*/
+   border: none;
+   outline: none; /*xóa hiệu ứng mặc định*/
+   background: transparent; /*transparent để nền trong suốt*/
+   font-size: 14px;
+   height: 100%;
+   padding: 0 10px;
+   color: #666;
+
+}
+
+.hrr{
+    width: 1px;
+    height: 18px;
+    background: #D9D9D9;
+}
+.hr {
+    width: 1px;
+    height: 24px;
+    background-color: #D9D9D9;
+}
+
+.header2__nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header2__nav__box{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.header2__nav-text {
+    color: var(--Text, #666);
+    font-family: "HK Grotesk";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 112.5% */
+}
+
+.header2__nav-text {
+    padding: 12px 30px;
+    border: 2px solid #1dc071;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1dc071;
+    border-radius: 8px;
+    transition: all 1s ease;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-transform: capitalize;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+  .header2__nav-text::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.9),
+      transparent
+    );
+    transition: all linear 0.5s;
+  }
+  .header2__nav-text:hover {
+    background-color: #1dc071;
+    color: #fff;
+  }
+  .header2__nav-text:hover::before {
+    left: 100%;
+  }
+
+
+
+
+/* header3 dưới header 2 */
+
+.header3 {
+    width: 100%;
+    height: 69px;
+    flex-shrink: 0;
+    background-color: var(--White);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 80px;
+    border: solid 1px #D9D9D9;
+
+}
+
+.header3__box {
+    display: flex;
+    margin: o;
+    padding: 9px 14px;
+    gap:1px;
+    border-radius: 18px;
+    background: #F3F9FB;
+}
+
+.header3__box-blue {
+    display: flex;
+    margin: o;
+    padding: 9px 14px;
+    gap:1px;
+    border-radius: 18px;
+    background: #008ECC;
+    color: var(--White);
+}
+
+.header3__box-icon {
+    width: 18px;
+    height: 18px;
+}
+
+
+.header3__box-text {
+    color: #222;
+    text-align: right;
+    font-family: "HK Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+}
+
+/* Banner dưới header */
+
+.banner {
+
+    height: 316px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #212844;
+    margin: 20px 120px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.banner__text {
+    color: var(--White, #FFF);
+    font-family: "HK Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 100% */
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.banner__img-clock {
+    width: 268px;
+    height: 270px;
+    flex-shrink: 0;
+}
+.ptext{
+    padding-top: 30px;
+}
+
+.banner__text>img{
+    height: 15px;
+    
+}
+
+
+/**tittle body */
+
+.tittle {
+    width: 100%;
+    height: 69px;
+    flex-shrink: 0;
+    background-color: var(--White);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 126px 96px 20px 96px;
+}
+
+.tittle-text {
+    color: var(--Text, #666);
+    font-family: "HK Grotesk";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+}
+
+.tittle-text__matphone{
+    color: var(--Primary, #008ECC);
+    font-family: "HK Grotesk";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.tittle__view {
+    display: flex;
+    color: var(--HEading, #222);
+    text-align: right;
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 112.5% */
+}
+/* tạo đường gạch ngang màu xanh dương */
+
+.hrrr {
+    width: 378px;
+    height: 3px;
+    background: #008ECC;
+    margin: 16px 0px 20px 96px;
+}
+
+/* bán điện thoại galaxy */
+.box {
+    width: 1371px;
+    height: 320px;
+    flex-shrink: 0;
+    background: var(--White, #FFF);
+    display: flex;
+    padding: 5px 0;
+    margin: 40px 125px 40px 100px;
+
+}
+
+.disTag {
+    display: inline-block;
+    width: 51px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 0px 16px;
+    background: var(--Primary, #008ECC);
+    position: relative;
+    /* right: -87px; */
+}
+
+.disTag-text {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "HK Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 114.286% */
+    position: relative;
+    display: inline-block;
+}
+
+.box__phone {
+    width: 227px;
+    height: 295px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid var(--Primary, #008ECC);
+    background: var(--Backgorund-1, #F5F5F5);
+    box-shadow: 0px 151px 42px 0px rgba(0, 0, 0, 0.00), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 54px 33px 0px rgba(0, 0, 0, 0.03), 0px 24px 24px 0px rgba(0, 0, 0, 0.04), 0px 6px 13px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 0px rgba(0, 0, 0, 0.05);
+    margin: 8px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.box__phone>img{
+    width: 84px;
+    height: 158px;  
+    flex-shrink: 0;
+   
+}
+
+.phone_price {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 15px 15px;
+    background: var(--White, #FFF);
+    margin-top: 30px;
+    display: inline-block;
+}
+.box__phone-name {
+    color: var(--HEading, #222);
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 112.5% */
+    padding-top: 12px;
+    padding-left: 12px;
+}
+.box__phone-cros-price {
+    color: var(--HEading, #222);
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 112.5% */
+    display: inline-block;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+
+.box__phone-net-price {
+    color: var(--HEading, #222);
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 112.5% */
+    text-decoration-line: strikethrough;
+    display: inline-block;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+
+.smallhr {
+    width: 201px;
+    height: 1px;
+    background: #EDEDED;
+    margin: 0px 12px;
+}
+
+.box__phone-net-save-price {
+    color: #249B3E;
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 112.5% */
+    display: block;
+    padding-left: 12px;
+    padding-top: 15px;;
+}
+
+
+/* tittle 2 */
+
+.hrrr1 {
+    width: 281px;
+    height: 3px;
+    background: #008ECC;
+    margin: 16px 0px 20px 96px;
+}
+/* category */
+
+.category {
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+.category__box {
+    display: flex;
+    width: 132px;
+    height: 172px;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.category__box-img {
+    width: 132px;
+    height: 132px;
+    flex-shrink: 0;
+    border-radius: 132px;
+background: url(<path-to-image>) lightgray -2px 11.62px / 103.03% 82.394% no-repeat, #F5F5F5;
+}
+
+.category-img {
+    border-radius: 50%;
+}
+
+.category__box-text {
+    color: var(--HEading, #222);
+    text-align: center;
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    padding-top: 37px;
+}
+
+/*thương hiệu hàng đầu*/
+
+.brand {
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+    gap: 16px;
+}
+
+.brand__box {
+    width: 400px;
+    height: 207px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #313131;
+    display: flex;
+   
+}
+
+.brand__box>img {
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.brand__box-disc {
+    color: var(--White, #FFF);
+    font-family: "HK Grotesk";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 125% */
+    display: inline;
+  
+}
+
+.brand__box-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.brand__box-text>img{
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FFF;
+    text-align: center;
+    padding: 5px;
+    margin-left: -14px;
+    display: inline;
+}
+
+.brand__box-icon {
+    border-radius: 8px;
+    background: #494949;
+    padding: 9px 20px;
+    margin: 20px 0px 20px 20px;
+    color: #FFF;
+    font-family: "HK Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+.brand__group-icon {
+    width: 114px;
+    height: 8px;
+    flex-shrink: 0;
+    margin: 30px auto 50px;
+}
+
+.hrrr2 {
+    width: 164px;
+    height: 3px;
+    background: #008ECC;
+    margin: 16px 0px 20px 96px;
+}
+
+.dailyProduct {
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+    gap: 16px;
+}
+
+.dailyProduct__box-img {
+    display: flex;
+    width: 187px;
+    height: 187px;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 16px;
+    border: 1px solid var(--Primary, #008ECC);
+    background: var(--Backgorund-1, #F5F5F5);
+    box-shadow: 0px 82px 23px 0px rgba(0, 0, 0, 0.00), 0px 52px 21px 0px rgba(0, 0, 0, 0.01), 0px 29px 18px 0px rgba(0, 0, 0, 0.03), 0px 13px 13px 0px rgba(0, 0, 0, 0.04), 0px 3px 7px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.dailyProduct__name {
+    color: var(--Text, #666);
+    text-align: center;
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    margin-top: 20px;
+}
+
+.dailyProduct__disc {
+    color: var(--HEading, #222);
+    text-align: center;
+    font-family: "HK Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 100% */
+    text-align: center;
+    margin-top: 4px;
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Galaxy S22 Ultra Group 25",
+        "price": 32999,
+        "originalPrice": 74999,
+        "save": 74999,
+        "image": "./assets/img/products/product1.png"
+    },
+    {
+        "id": 2,
+        "name": "Galaxy M13 (4GB | 64 GB )",
+        "price": 10499,
+        "originalPrice": 14999,
+        "save": 14999,
+        "image": "./assets/img/products/product2.png"
+    },
+    {
+        "id": 3,
+        "name": "Galaxy M33 (4GB | 64 GB )",
+        "price": 16999,
+        "originalPrice": 24999,
+        "save": 8000,
+        "image": "./assets/img/products/product3.png"
+    },
+    {
+        "id": 4,
+        "name": "Galaxy M53 (4GB | 64 GB )",
+        "price": 31999,
+        "originalPrice": 40999,
+        "save": 9000,
+        "image": "./assets/img/products/product4.png"
+    },
+    {
+        "id": 5,
+        "name": "Galaxy S22 Ultra",
+        "price": 67999,
+        "originalPrice": 67999,
+        "save": 18000,
+        "image": "./assets/img/products/product5.png"
+    }
+
+    
+]
