@@ -11,7 +11,9 @@ const renderProducts = (products) => {
     products.forEach(products => {
         const productHtml = `
              <div  class="box__phone">
-                
+                <div class="box__phone-disc">
+                    <p class="box__phone-txt">69% OFF</p>
+                </div>
                 <img class src="${products.image}" alt="">
                 <div class="phone_price">
                     <p class="box__phone-name">${products.name}</p>

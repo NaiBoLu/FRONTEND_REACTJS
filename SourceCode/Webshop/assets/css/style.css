@@ -240,6 +240,55 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 80px;
+    position: relative;
+}
+
+.banner__control {
+    position: absolute;
+    left: -43px;
+    display: block;
+    width: 86px;
+    height: 86px;
+    flex-shrink: 0;
+}
+.banner__control-right {
+    position: absolute;
+    left: 1236px;
+    display: block;
+    width: 86px;
+    height: 86px;
+    flex-shrink: 0;
+}
+
+.banner__control-btn {
+    width: 86px;
+    height: 86px;
+    z-index: 1;
+}
+
+.banner__control-arr {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 2;
+    left: 30px;
+    top: 35px;
+}
+
+.banner__control-right {
+    width: 86px;
+    height: 86px;
+    z-index: 1;
+}
+
+.banner__control-arr-right {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 2;
+    left: 30px;
+    top: 35px;
+    transform: scaleX(-1);
 }
 
 .banner__text {
@@ -251,8 +300,10 @@
     line-height: 30px; /* 100% */
     display: flex;
     flex-direction: column;
-    
+}
 
+.banner__group {
+    margin: 77px 0px 25px 0px;
 }
 
 .banner__img-clock {
@@ -372,6 +423,29 @@
     position: relative;
 }
 
+.box__phone-disc {
+    width: 51px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 0px 16px;
+    background: var(--Primary, #008ECC);
+    position: absolute;
+    right: 0px;
+
+}
+
+.box__phone-txt {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "HK Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 114.286% */
+    position: absolute;
+
+    padding: 10px;
+}
 .box__phone>img{
     width: 84px;
     height: 158px;  
@@ -593,8 +667,6 @@ background: url(<path-to-image>) lightgray -2px 11.62px / 103.03% 82.394% no-rep
     width: 187px;
     height: 187px;
     flex-shrink: 0;
-    padding: 0;
-    margin: 0;
     border-radius: 16px;
     border: 1px solid var(--Primary, #008ECC);
     background: var(--Backgorund-1, #F5F5F5);
@@ -622,4 +694,132 @@ background: url(<path-to-image>) lightgray -2px 11.62px / 103.03% 82.394% no-rep
     line-height: 20px; /* 100% */
     text-align: center;
     margin-top: 4px;
+}
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 592px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #008ECC;
+    padding: 0 120px;
+    margin-top: 120px;
+}
+
+.footer__box {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 80px;
+}
+
+.footer__box-list {
+    list-style-type: disc;
+    color: var(--White, #FFF);
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px; /* 231.25% */
+    padding-left: 30px;
+
+}
+
+.hrfooter {
+    height: 1px;
+    background: #05ABF3;
+    margin: 30px 0px;
+}
+
+.footer__copyright {
+    padding: 30px 120px;
+    background: #008ECC;
+}
+.copyright {
+    color: var(--White, #FFF);
+    font-family: "HK Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    text-align: center;
+}
+
+.footer__box-icon {
+    width: 217px;
+    height: 44px;
+    flex-shrink: 0;
+}
+
+.footer__box-header {
+    color: var(--White, #FFF);
+    font-family: "HK Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 100% */
+    margin-top: -43px;
+}
+
+.footer__box-custom {
+    color: var(--White, #FFF);
+    font-family: "HK Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 100% */
+    margin-top: -114px;
+}
+
+.footer__box-down-img {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.footer__box-title {
+    color: var(--White, #FFF);
+    font-family: "HK Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 100% */
+    padding: 20px 0px 10px 0px;
+}
+
+.footer__box-whats {
+    display: flex;
+    padding: 10px 0px;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer__box-text {
+    color: var(--White, #FFF);
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    
+}
+
+.footer__box-phone {
+    color: var(--White, #FFF);
+    font-family: "HK Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    padding-left: 32px;
+    margin-top: -29px;
+    padding-top: 0px;
+
 }
